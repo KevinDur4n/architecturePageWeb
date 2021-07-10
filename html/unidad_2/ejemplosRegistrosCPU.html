@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <p class='contenido'>Ejemplos de registros de CPU reales</p>
+                    <p class='texto'>
+                        En algún diseño concreto de procesador es posible encontrar otros registros relativos a estado
+                        y control. Puede existir un puntero a un bloque de memoria que contenga información de estado
+                        adicional
+                        (por ejemplo, bloques de control de procesos). En las máquinas que usan interrupciones
+                        vectorizadas
+                        puede existir un registro de vector de interrupción. Si se utiliza una pila para llevar a
+                        cabo ciertas funciones (por ejemplo, llamada a subrutina), se necesita un puntero de pila
+                        del sistema. En un sistema de memoria virtual se usa un puntero a la tabla de páginas.
+                        Por último, pueden emplearse registros para el control de operaciones de E/S.</p>
+                    <p class='texto'>
+                        En el diseño de la organización de los registros de control y estado entran en juego
+                        varios factores.</p>
+                    <p class='texto'>
+                        Una cuestión primordial es el soporte del sistema operativo. Algunos tipos de información
+                        de control son de utilidad específica para el sistema operativo. Si el diseñador del
+                        procesador posee una comprensión funcional del sistema operativo que se va a utilizar, la
+                        organización
+                        de los registros puede adaptarse hasta cierto punto a ese sistema operativo.</p>
+                    <p class='texto'>
+                        Otra decisión importante en el diseño es la distribución de información de control entre
+                        registros y
+                        memoria. Es frecuente dedicar los primeros (más bajos) pocos cientos o miles de palabras de
+                        memoria para fines de control. El diseñador debe decidir cuánta información de control
+                        debiera estar en registros y cuánta en memoria. Se presenta el compromiso habitual entre coste
+                        y velocidad.</p>
+
+                </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

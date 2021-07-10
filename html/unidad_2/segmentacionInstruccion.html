@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                <p class='contenido'>Segmentación de instrucciones</p>
+                <p class='texto'>
+                    La segmentación de cauce(pipelining)es una forma particularmente efectiva
+                    de organizar el hardware de la CPU para realizar más de una operación al
+                    mismo tiempo.</p>
+                <p class='texto'>
+                    Consiste en descomponer el proceso de ejecución de las instrucciones en fases o etapas
+                    que permitan una ejecución simultánea.</p>
+                <p class='texto'>
+                    Explota el paralelismo entre las instrucciones de un flujo secuencial.</p>
+                <p class='tituloInterno'>Ejemplo de estrategia</p>
+                <ul>
+                    <li class='textoListas'>Similar a la línea de armado en una planta de manufactura.</li>
+                    <li class='textoListas'>El producto pasa por varios estados en el proceso de producción.</li>
+                    <li class='textoListas'>Por lo tanto, varios productos pueden ser manipulados simultáneamente
+                        (cada uno en estados distintos).</li>
+                    <li class='textoListas'>Se puede comenzar el proceso nuevamente(entrada a la línea de producción)
+                        antes de que salga el producto final de la misma.</li>
+                </ul>
+                <p class='tituloInterno'>Ejemplo de estrategia 2</p>
+                <img class='lav1'>
+                <p class='tituloInterno'>Ejemplo de estrategia 3</p>
+                <img class='lav2'>
+                <p class='tituloInterno'>Características</p>
+                <ul>
+                    <li class='textoListas'>La segmentación es una técnica de mejora de prestaciones a nivel de
+                        diseño hardware.</li>
+                    <li class='textoListas'>La segmentación es invisible al programador.</li>
+                    <li class='textoListas'>Necesidad de uniformizar las etapas al mismo tiempo de la más
+                        lenta.</li>
+                    <li class='textoListas'>El diseño de procesadores segmentados tiene gran dependencia
+                        del repertorio de instrucciones.</li>
+                </ul>
+                <p class='tituloInterno'>Tareas a realizar por el ciclo</p>
+                <ul>
+                    <li class='textoListas'><b>Búsqueda (F, Fetch)</b></li>
+                    <p class='texto'>
+                        Se accede a memoria por la instrucción.</p>
+                    <p class='texto'>
+                        Se incrementa el PC.</p>
+                    <li class='textoListas'><b>Decodificación (D, Decode)</b></li>
+                    <p class='texto'>
+                        Se decodifica la instrucción, obteniendo operación a realizar en la ruta de datos.</p>
+                    <p class='texto'>
+                        Se accede al banco de registros por el/los operando/s (si es necesario).</p>
+                    <p class='texto'>
+                        Se calcula el valor del operando inmediato con extensión de signo (si hace falta).</p>
+                    <li class='textoListas'><b>Ejecución (X, Execute)</b></li>
+                    <p class='texto'>
+                        Se ejecuta la operación en la ALU.</p>
+                    <li class='textoListas'><b>Acceso a memoria (M, Memory Access)</b></li>
+                    <p class='texto'>
+                        Si se requiere un acceso a memoria, se accede.</p>
+                    <li class='textoListas'><b>Almacenamiento (W, Writeback)</b></li>
+                    <p class='texto'>
+                        Si se requiere volcar un resultado a un registro, se accede al banco de registros.</p>
+                </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

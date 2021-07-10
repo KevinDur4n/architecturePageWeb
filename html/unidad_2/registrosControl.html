@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <p class='contenido'>Registros de control y de estados.</p>
+                    <p class='texto'>
+                        Hay diversos registros del procesador que se emplean para controlar su funcionamiento.
+                        La mayoría de ellos, en la mayor parte de las máquinas, no son visibles por el usuario.
+                        Algunos de ellos pueden ser visiblespor ciertas instrucciones máquina ejecutadas en un modo
+                        de controlo de sistema operativo.</p>
+                    <p class='texto'>
+                        Naturalmente, máquinas diferentes tendrán distintas organizaciones de registros y usarán
+                        distinta
+                        terminología. A continuación se presenta una lista razonablemente completa de tipos de
+                        registros, con
+                        una breve descripción.</p>
+                    <p class='texto'>
+                        Son esenciales cuatro registros para la ejecución de una instrucción:</p>
+                    <ul>
+                        <li class='textoListas'>Contador de programa (Program Counter, PC): contiene la dirección de la
+                            instrucción a
+                            captar.</li>
+                        <li class='textoListas'>Registro de instrucción (lnstruction Register, IR): contiene la
+                            instrucción captada más recientemente.</li>
+                        <li class='textoListas'>Registro de dirección de memoria (Memory Address Register, MAR):
+                            contiene la
+                            dirección de una posición de memoria.</li>
+                        <li class='textoListas'>Registro intermedio de memoria (Memory Buffer Register, MBR): contiene
+                            la
+                            palabra de datos a escribir en memoria o la palabra leída más recientemente.</li>
+                    </ul>
+                    <p class='texto'>
+                        No todos los procesadores tienen registros internos designados como MAR y MBR, pero es
+                        necesario algún mecanismo de almacenamiento intermedio equivalente mediante el cual se dé
+                        salida a los bits que van a ser transferidos al bus del sistema y se almacenen temporalmente los
+                        bits leídos del bus de datos.</p>
+                    <p class='texto'>
+                        Típicamente, el procesador actualiza PC después de cada captación de instrucción de
+                        manera que siempre apunta a la siguiente instrucción a ejecutar. Una instrucción de bifurcación
+                        o salto también modificará el contenido de PC. La instrucción captada se carga en IR, donde son
+                        analizados
+                        el código de operación y los campos de operando. Se intercambian datos con la memoria por medio
+                        de
+                        MAR y de MBR. En un sistema con organización de bus, MAR se conecta directamente al bus de
+                        direcciones, y MBR directamente al bus de datos. Los registros visibles por el usuario
+                        repetidamente
+                        intercambian datos con MBR.</p>
+                    <p class='texto'>
+                        Los cuatro registros que se acaban de mencionar se usan para la transferencia de datos entre el
+                        procesador
+                        y la memoria. Dentro del procesador, los datos tienen que ofrecerse a la ALU para su
+                        procesamiento.</p>
+                    <p class='texto'>
+                        La ALU puede tener acceso directo a MBR y a los registros visibles por el usuario. Como
+                        alternativa, puede haber
+                        registros intennedios adicionales en tomo a la ALU; estos registros sirven como registros de
+                        entrada y salida
+                        de la ALU e intercambian datos con MBR y los registros visibles por el usuario.</p>
+                    <img class='RegistrosControl'>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

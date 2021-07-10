@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <h2 align="center">Manejo de Entradas y Salidas</h2>
+                    <hr>
+                    <p>
+                        Los medios de comunicación entre el usuario y el computador es atreves de los periféricos, estos
+                        a su vez esta conectados a modulos de entrada y salidas que tiene componentes de hardware y
+                        software
+                        Los cuales facilitan las operaciones entre los periféricos, memoria y registros del procesador.
+                    </p>
+                    <div class="imagesCenter">
+                        <img src="../../media/images/unidad_1/modulosES.png">
+                    </div>
+                    <table border="1" class="ventajasDesventajasHarvard">
+                        <tr>
+                            <th>Objetivo</th>
+                            <th>Componentes</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Facilitar las operaciones entre los periféricos, memoria y registros del procesador.
+                            </td>
+                            <td>
+                                Los módulos de E/S están constituidos por parte de hardware y ayuda de software
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="imagesCenter">
+                        <img src="../../media/images/unidad_1/diagramaModulosES.png">
+                        <p class="pieImagen">Diagrama de Modulos E/S</p>
+                    </div>
+                    <h4 id = "1" >Modulos E/S programados</h4>
+                    <p>
+                        Las entradas y salidas programadas, consiste en que el procesador ejecute un programa en el cual
+                        este haciendo una
+                        consulta a los modulos de entra y salida para dectectar un cambio en sus registros
+                        Este programa con lleva una ejecución de operaciones como lo son la transferencia de datos que
+                        consiste en la
+                        sincronización, que es la espera del procesador a cualquier cambio frente a la entrada y salida.
+                        El intercambio de datos
+                        lo administra el procesador ya se una operación de lectura almacenando la información en la
+                        memoria o extrayéndola de
+                        esta y enviándola a el periférico, la gran desventaja es que el procesador no puede realizar
+                        otra tarea mas mientras
+                        realiza esta espera.
+
+                    </p>
+                    <h4 align="center">Transferencia de datos</h4>
+                    <p>
+                        <b>Sincronización:</b> El programa ejecutado espera un cambio, en las E/S, hace una consulta en
+                        el registro del modulo E/S. El procesador de
+                        dedica todo sus recursos en esta tarea
+
+                    </p>
+                    <p>
+                        <b>Intercambio De Datos:</b> En una operación de lectura el procesador lee el registro del
+                        Modulo de E/S y lo almacena en la memoria, y en una
+                        operación de salida extrae el dato de la memoria y lo envía al periférico indicado.
+
+                    </p>
+                    <h4 id="2">Modulo de E/S interrumpidas</h4>
+                    <p>
+                        Las interrupciones es una manera mas ágil de tratar las operaciones que con lleva la espera de
+                        una actividad en el
+                        modulo de entrada y salida, además que alivia la carga al procesador para que este pueda
+                        realizar operaciones
+                        adicionales.
+                    </p>
+
+
+                    <div class="imagesCenter">
+                        <img src="../../media/images/unidad_1/diagramaInterrupciones.png">
+                        <p class="pieImagen">Diagrama de interrupciones</p>
+                    </div>
+                    <p>
+                        El programa genera una orden de E/S y después continua ejecutándose hasta que el hardware lo
+                        interrumpa en para indicar
+                        que la operación ha concluido.<br>El modulo de E/S se encarga de la sincronización. Como el
+                        procesador debe tener una entrada de interrupción el modulo E/S debe contener una salida para
+                        tal interrupción.
+                    </p>
+                    <p>
+                        Aun se requiere la intervención del procesador para transferir datos pero puede esperar a que
+                        finalice mientras realiza
+                        otras operaciones.
+                    </p>
+                    <h4 id = "3"> E/S Acceso Directo a Memoria (DMA)</h4>
+                    <p>
+                        Por medio de otro procesador podemos retirar la tarea al procesador de la transferencia de datos
+                        y de la espera activa
+                        para que este pueda realizar otro tipo de tareas, el modulo DMA utiliza el bus del sistema
+                        cuando el procesador no lo
+                        necesita y se encarga de la transferencia de los datos y de la sincronización
+
+                    </p>
+                    <div class="imagesCenter">
+                        <img src="../../media/images/unidad_1/busDMA.jpg"> </div>
+                    <br>
+                    <h3>Canales y procesadores E/S</h3>
+                    <p>
+                    Los canales de entrada y salida son una ampliación del DMA, el cual ejecuta instrucciones de entrada y salida, el canal
+                    selectos maneja entradas y salidas en un instante a un dispositivo, a diferencia del canal multiplexor que maneja
+                    entradas y salidas de varios dispositivos al mismo tiempo
+ 
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <p class='contenido'>Conjunto de instrucciones</p>
+                    <p class='texto'>
+                        El conjunto de instrucciones que maneja una computadora es una pieza fundamental para el
+                        funcionamiento
+                        de ésta debido a que las instrucciones se comunican directamente con el procesador para hacer un
+                        manejo
+                        adecuado de los datos que están procesando y dependiendo del tipo de set de instrucciones que un
+                        CPU
+                        entienda nos dirá el tipo de programas que una computadora puede llegar o no a soportar, esto
+                        responde
+                        muchas veces a las interrogantes de porque no podemos utilizar las mismas aplicaciones de un
+                        dispositivo
+                        a otro y muchas veces es por la diferencia de procesadores y el conjunto de instrucciones que
+                        maneja uno
+                        respecto al otro. Sin embargo aunque haya diferencias, los conjuntos de instrucciones mantienen
+                        ciertas
+                        características que distinguen ciertas funciones que generalmente deben de estar presentes en
+                        los distintos
+                        sets que existen, a continuación se describirán algunas de estas características:</p>
+
+                    <p class='tituloInterno'>Ortogonales (Simétricas)</p>
+                    <p class='texto'>
+                        La ortogonalidad es una característica de las instrucciones que es considerada algo amplia en
+                        términos de lo
+                        que requiere una instrucción o un set de instrucciones para ser considerado ortogonal en primera
+                        instancia se
+                        dice que las instrucciones en un set deben de poder ser fuente y destino de cualquier elemento
+                        de la arquitectura
+                        del CPU con esto se refiere a que las instrucciones no solo deben de ser independientes en el
+                        sentido de que
+                        cada una haga una función única y distinta que no repita lo que hace otra, sino que en conjunto
+                        el set de
+                        instrucciones debe de ser independiente y consistente en el sentido de que cualquier operando
+                        pueda ser
+                        direccionado con cualquier tipo de direccionamiento y cualquier tipo de direccionamiento pueda
+                        direccionar a
+                        cualquier tipo de operando en una instrucción, así que por ejemplo no puede existir un registro
+                        que sea para un
+                        tipo específico de operando. Entre más de esta característica posea un set de instrucciones se
+                        dice que es más
+                        ortogonal que otro.</p>
+
+                    <p class='tituloInterno'>RISC</p>
+                    <p class='texto'>
+                        Un juego de instrucciones Cisc se caracteriza por un número reducido de instrucciones además del
+                        uso de
+                        pipelining que permite al procesador dividir la ejecución de una instrucción en distintas fases
+                        incrementando
+                        de esa manera la velocidad de ejecución. Otra característica importante es el uso de
+                        instrucciones Ortogonales
+                        (explicadas anteriormente) lo cual le permite que cualquier tipo de operando pueda direccionarse
+                        de distintas
+                        formas. A la hora de realizar operaciones de distintos tipos Cisc solo permite que estas
+                        operaciones sean
+                        realizadas sobre registros, no permite trabajar sobre memoria a menos que sean instrucciones
+                        exclusivamente
+                        para accesar a memoria o para guardar datos en memoria, por eso mismo Cisc brinda una muy basta
+                        cantidad de
+                        registros para trabajar sobre estos.
+                    <p>
+                    <p class='texto'>
+                        Enfocándonos en la forma de programar con un juego de instrucciones Cisc, esto generalmente
+                        requiere de más
+                        código debido a la simplicidad de sus instrucciones y a la poca cantidad con las que se cuenta
+                        para trabajar.
+                    <p>
+
+                    <p class='tituloInterno'> CISC</p>
+                    <p class='texto'>
+                        A diferencia del set de instrucciones Cisc, este set tiene una cantidad de instrucciones
+                        considerable pero
+                        dichas instrucciones no suelen ejecutarse por medio de segmentación o pipelining, sus
+                        instrucciones no son
+                        ortogonales eso quiere decir que se debe tener cuidado con los registros que se utilizan debido
+                        a que no se
+                        pueden direccionar de cualquier forma los datos sobre cualquier registro, se debe especificar en
+                        la
+                        instrucción.</p>
+
+                    <p class='texto'>
+                        En este set de instrucciones se permite trabajar en memoria además de los registros teniendo más
+                        espacio
+                        disponible para utilizar a conveniencia en memoria y por consiguiente el número de registros es
+                        más pequeño
+                        ya que contamos con ese extra en memoria.</p>
+
+                    <p class='texto'>
+                        A la hora de programar en Risc se requiere menor esfuerzo debido a que se puede utilizar el
+                        lenguaje C lo
+                        que permite al programador realizar tareas específicas sin utilizar demasiado código debido a
+                        que cada
+                        instrucción puede realizar tareas más complejas. </p>
+
+                    <p class='texto'>
+                        La segmentación de instrucciones es similar al uso de una cadena de montaje en una fábrica de
+                        manufacturación.
+                        En las cadenas de montaje, el producto pasa a través de varias etapas de producción antes de
+                        tener el producto
+                        terminado.</p>
+
+                    <p class='texto'>
+                        Cada etapa o segmento de la cadena está especializada en un área específica de la línea de
+                        producción y lleva a cabo
+                        siempre la misma actividad. Esta tecnología es aplicada en el diseño de procesadores eficientes.
+                        A estos
+                        procesadores
+                        se les conoce como pipeline processors. Estos están compuestos por una lista de segmentos
+                        lineales y secuenciales
+                        en donde cada segmento lleva a cabo una tarea o un grupo de tareas computacionales. Los datos
+                        que provienen del
+                        exterior se introducen en el sistema para ser procesados.</p>
+
+                    <p class='texto'>
+                        La computadora realiza operaciones con los datos que tiene almacenados en memoria, produce
+                        nuevos datos o
+                        información para uso externo. Las arquitecturas y los conjuntos de instrucciones se pueden
+                        clasificar considerando
+                        los siguientes aspectos:</p>
+
+                    <ul>
+                        <li class='textoListas'><b>Almacenamiento de operandos en la CPU:</b> dónde se ubican los
+                            operandos aparte de la
+                            memoria.</li>
+                        <li class='textoListas'><b>Número de operandos explícitos por instrucción:</b> cuántos operandos
+                            se expresan en
+                            forma
+                            explícita en una instrucción típica. Normalmente son 0, 1, 2 y 3. </li>
+                        <li class='textoListas'><b>Posición del operando:</b> ¿Puede cualquier operando estar en
+                            memoria?, o deben estar
+                            algunos o todos en los registros internos de la CPU. Cómo se especifica la dirección de
+                            memoria (modos de
+                            direccionamiento disponibles).</li>
+                        <li class='textoListas'><b>Operaciones:</b> Qué operaciones están disponibles en el conjunto de
+                            instrucciones.
+                            Tipo y tamaño de operandos y cómo se especifican</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

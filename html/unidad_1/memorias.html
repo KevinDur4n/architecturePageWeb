@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+	<title>Arquitectura de Computadoras</title>
+	<meta charset="utf-8">
+	<!-- Agregamos un icono a la pestaña-->
+	<link rel="shortcut icon" href="..\media\images\favicon.png">
+
+	<!-- Agregamos la hojas de estilo -->
+	<link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+	<!-- Agregamos fuentes de la API Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+		rel="stylesheet">
+
+	<script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+	<div id="Header"></div>
+	<table>
+		<!-- Creamos la maquetacion de la pagina-->
+		<tr id="Contenido_Temario">
+			<td id="Navgador" class="listaContenido">
+				<div id="Navegacion" class="navegador">
+					<!-- Este div contendra una lista de los temarios. -->
+				</div>
+			</td>
+			<td >
+				<!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+				<div id="Contenido" class="contenido">
+					<h2 align="center">Memorias</h2>
+					<hr>
+					<p>En terminos, generales un memoria es una arquitectura compuesta por circutos integrados, cada
+						chip es de millones de condensadores y transistores, que almacena datos e instrucciones de los
+						programas ejecutados por el procesador. Internamente son un conjunto de celdas basicas que
+						almacena bits, desde la creacion del transistor han ido evolucionando a grande circuitos.En su
+						componentes mas importantes es el decodifcador debio a que administra las celdas que deben
+						activarse o leerse.
+					</p>
+					<p>Primeramente exite una clasifcacion de memorias volatile y no volatiles:</p>
+					<table border="1" class="ventajasDesventajasHarvard">
+						<tr>
+							<th>Volatiles</th>
+							<th>No volatiles</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="imagesCenter">
+									<img src="../../media/images/unidad_1/memoriaVolatiles.png">
+								</div>
+							</td>
+							<td>
+								<div class="imagesCenter">
+									<img src="../../media/images/unidad_1/memoriaNoVolatiles.png">
+								</div>
+							</td>
+						</tr>
+
+					</table>
+					<p>Las memorias volátiles necesitan estar alimentadas a la energía para mantener la información
+						dentro de ellas a diferencia de las no volátiles puede permanecer la información aun si no esta
+						alimentada.
+						Un tipo de memoria volátil es la RAM la memoria de acceso aleatorio conocida por tener un alta
+						velocidad y se un componente esencial en los dispositivos informáticos
+					</p>
+					<p>
+						Las memorias no volátiles contiene un tipo de memoria diferente a las no volátiles pues se les
+						conocen como memorias flash, algunas tecnologías basadas en estas memorias han ido evolucionando
+						hasta tener grandes velocidades de lecturas y de escritura como lo son los SSD.
+
+					</p>
+					<h4 id="1">Manjeo de memoria</h4>
+					<p>
+						El manejo de memoria lo realiza el procesador encargado de extraer y almacenar la información en
+						dos tipos de memorias la memoria principal y la memoria cache.
+					</p>
+
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/manejoDememoria.png">
+						<p class="pieImagen">Ilustracion que muestra el manejo de memoria</p>
+					</div>
+
+					<h4 id="2">Memoria Principal</h4>
+					<p>
+						La memoria principal de semiconductor utiliza en su arquitectura
+						circuitos integrados basados en semiconductores para
+						almacenar información.
+						Un chip de memoria de semiconductor puede contener
+						millones de minúsculos transistores o condensadores. En las computadoras modernas, la memoria
+						principal
+						consiste casi exclusivamente en memoria de semiconductor
+						volátil y dinámica, también conocida como memoria
+						dinámica de acceso aleatorio o más comúnmente RAM.
+					</p>
+					<p>La memoria principal que se incrusta en la placa base donde se encuentra el procesador, tiene una
+						gran capacidad pero a diferencia de la memoria cache es mas lenta.</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/memoriaPrincipal.png">
+						<p class="pieImagen">Memoria RAM (Memoria de Acesso Aleatorio)</p>
+					</div>
+					<h4 id="3">Memoria Cache</h4>
+					<p>
+						Dentro de nuestro procesador no sólo se encuentran los
+						componentes que hacen posible sus enormes capacidades de
+						computación, también hay una pequeña memoria que se
+						encarga de conseguir que el trabajo de nuestro
+						procesador pueda realizarse a la velocidad que este opera.
+						Es la memoria de acceso rápido de una computadora, que
+						guarda temporalmente las últimas informaciones procesadas.
+						La memoria caché es un búfer especial de memoria que
+						poseen las computadoras, que funciona de manera similar a
+						la memoria principal, pero es de menor tamaño y de acceso
+						más rápido. Es usada por el procesador para reducir el
+						tiempo de acceso a datos ubicados en la memoria principal
+						que se utilizan con más frecuencia.
+
+					</p>
+					<p>
+						La caché es una memoria que se sitúa entre la unidad central
+						de procesamiento (CPU) y la memoria de acceso
+						aleatorio (RAM) para acelerar el intercambio de datos.
+					</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/memoriaCache.gif">
+						<p class="pieImagen">Estructura de memorias</p>
+					</div>
+					<p>
+						Cuando se accede por primera vez a un dato, se hace una
+						copia en la caché; los accesos siguientes se realizan a dicha
+						copia, haciendo que sea menor el tiempo de acceso medio al
+						dato.Cuando el procesador necesita leer o escribir en una
+						ubicación en memoria principal, primero verifica si una
+						copia de los datos está en la memoria caché; si es así, el
+						procesador de inmediato lee o escribe en la memoria caché,
+						que es mucho más rápido que de la lectura o la escritura a la
+						memoria principal.
+					</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/diagramaMemoraCache.png">
+					</div>
+					<p>
+						Dentro de la memoria cache se subdivide en varios niveles la cache L1 tiene un acceso rápido
+						pero es de muy poca capacidad , hay dos tipos la de datos y la de instrucciones.
+						Después tenemos el siguiente nivel cache L2 es una memoria que tiene el doble de capacidad de la
+						del primer nivel, solamente que tiene menor velocidad y tenemos por ultimo la cache L3 que sigue
+						siendo mas rápida que la memoria principal, pero es mas lenta que las ultimas dos, aun así se
+						utiliza para guardar la información que no se guardo en las localidades de las anteriores
+						memorias.
+					</p>
+
+
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

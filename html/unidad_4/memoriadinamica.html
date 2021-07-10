@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <h2 align="center">Sistemas de memoria distribuida y Redes de interconexión estáticas</h2>
+                    <hr>
+                    <h2>Sistemas de memoria distribuida: Multicomputadores Clúster</h2>
+                    <p >
+                        Los sistemas de memoria distribuida o multicomputadores pueden ser de dos tipos básicos. El
+                        primer de
+                        ellos consta de un único computador con múltiples CPUs comunicadas por un bus de datos mientras
+                        que en
+                        el segundo se utilizan múltiples computadores, cada uno con su propio procesador, enlazados por
+                        una red
+                        de interconexión más o menos rápida.</p>
+
+                    <p >
+                        Sobre los sistemas de multicomputadores de memoria distribuida, se simula memorias compartidas.
+                        Se usan
+                        los mecanismos de comunicación y sincronización de sistemas multiprocesadores.</p>
+
+                    <p >
+                        Un clúster es un tipo de arquitectura paralela distribuida que consiste de un conjunto de
+                        computadores
+                        independientes interconectados operando de forma conjunta como único recurso computacional sin
+                        embargo,
+                        cada computador puede utilizarse de forma independiente o separada.</p>
+
+                    <p >
+                        En esta arquitectura, el computador paralelo es esencialmente una colección de procesadores
+                        secuenciales,
+                        cada uno con su propia memoria local, que pueden trabajar conjuntamente.</p>
+
+                    <ul>
+                        <li >Cada nodo tiene rápido acceso a su propia memoria y acceso a la memoria
+                            de
+                            otros nodos mediante una red de comunicaciones, habitualmente una red de comunicaciones de
+                            alta
+                            velocidad.</li>
+                        <li >Los datos son intercambiados entre los nodos como mensajes a través de
+                            la red.</li>
+                        <li >Una red de ordenadores, especialmente si disponen de una interconexión
+                            de
+                            alta velocidad, puede ser vista como un multicomputador de memoria distribuida y como tal
+                            ser utilizada
+                            para resolver problemas mediante computación paralela.</li>
+                    </ul>
+
+                    <h2>Redes De Interconexión Estática</h2>
+
+                    <p >
+                        Las redes estáticas emplean enlaces directos fijos entre los nodos. Estos enlaces, una vez
+                        fabricado el
+                        sistema son difíciles de cambiar, por lo que la escalabilidad de estas topologías es baja. Las
+                        redes
+                        estáticas pueden utilizarse con eficiencia en los sistemas en que pueden predecirse el tipo de
+                        tráfico
+                        de comunicaciones entre sus procesadores.</p>
+
+                    <h3>Clases de redes de interconexión:</h3>
+
+                    <ul>
+                        <li >Formación lineal: Se trata de una red unidimensional en que los nodos se
+                            conectan cada uno con el siguiente medianteN-1 enlaces formando una línea.</li>
+                        <li >Mallas y toros: Esta red de interconexión es muy utilizada en la
+                            práctica.
+                            Las redes en toro son mallas en que sus filas y columnas tienen conexiones en anillo, esto
+                            contribuye
+                            a disminuir su diámetro. Esta pequeña modificación permite convertir a las mallas en
+                            estructuras
+                            simétricas y además reduce su diámetro a la mitad.</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

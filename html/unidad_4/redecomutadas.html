@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <h2 align="center">Redes de interconexión dinámica (indirecta)
+                    </h2>
+                    <hr>
+                    <p>
+                        Uno de los criterios más importantes para la clasificación de las redes es el que tiene en
+                        cuenta la
+                        situación de la red en la máquina paralela, dando lugar a dos familias de redes: redes estáticas
+                        y
+                        redes dinámicas. Una red estática es una red cuya topología queda definida de manera definitiva
+                        y estable
+                        durante la construcción de la máquina paralela.</p>
+
+                    <p>
+                        La red simplemente une los diversos elementos de acuerdo a una configuración dada. Se utiliza
+                        sobre todo
+                        en el caso de los multicomputadores para conectar los diversos procesadores que posee la
+                        máquina. Por
+                        la red sólo circulan los mensajes entre procesadores, por lo que se dice que la red presenta un
+                        acoplamiento
+                        débil. En general, en las redes estáticas se exige poca carga a la red.</p>
+
+                    <p>
+                        Una red dinámica es una red cuya topología puede variar durante el curso de la ejecución de un
+                        programa
+                        paralelo o entre dos ejecuciones de programas. La red está constituida por elementos materiales
+                        específicos, llamados commutadores o switches.</p>
+
+                    <p>
+                        Las redes dinámicas se utilizan sobre todo en los multiprocesadores. En este caso, la red une
+                        los
+                        procesadores a los bancos de memoria central. Cualquier acceso de un procesador a la memoria
+                        (bien
+                        sea para acceder a los datos o a las instrucciones) debe pasar a través de la red, por lo se
+                        dice
+                        que la red tiene un acoplamiento fuerte. La red debe poseer un rendimiento extremadamente bueno
+                        para
+                        no demorar demasiado a los procesadores que acceden a memoria.</p>
+                    <h2 align="center">Redes de medio compartido</h2>
+                        <p>
+                            En el ejemplo del subapartado anterior sólo había un emisor y un receptor unidos por una
+                            fibra
+                            óptica.
+                            En el mundo de las comunicaciones, y de las redes de computadores en particular, el medio
+                            que se
+                            utiliza
+                            para comunicarse suele estar compartido. Con una serie de ejemplos iremos viendo diferentes
+                            maneras de
+                            compartir el medio.</p>
+
+                        <p>
+                            En el caso de la televisión o la radio, existen diferentes canales y emisoras que están
+                            compartiendo
+                            el medio. A fin de que no haya problemas, hay una regulación del espectro radioeléctrico: se
+                            tiene
+                            cuidado de que cada uno de los canales tenga asignada una frecuencia determinada y que no
+                            haya
+                            más de
+                            un canal usando la misma frecuencia. Este sistema se llama multiplexación por división de
+                            frecuencia
+                            y no sólo se utiliza en la radio y la televisión.</p>
+
+                        <p>
+                            Por ejemplo, los sistemas de línea de abonado digital asimétrica (ADSL) utilizan este
+                            sistema
+                            para
+                            conectar la red de computadores de casa a Internet. Como se puede ver en la figura
+                            siguiente,
+                            por el
+                            cable telefónico circulan tres tipos de información, cada uno por su frecuencia asignada: la
+                            voz
+                            de
+                            las llamadas telefónicas, la información digital que viene de Internet (bajada) y la
+                            información
+                            digital
+                            que nosotros enviamos a Internet (subida).</p>
+
+                        <p>
+                            Si lo que se está compartiendo es una fibra óptica, se tiende a realizar una multiplexación
+                            por
+                            división del tiempo. Supongamos que una misma fibra está siendo utilizada por cuatro
+                            comunicaciones.
+                            En ese caso, la fibra estará disponible durante un instante determinado de tiempo para la
+                            comunicación
+                            número 1; el siguiente instante de tiempo lo estará para la comunicación 2 y así
+                            sucesivamente.
+                            Una vez
+                            haya acabado la comunicación número 4, la fibra volverá a estar disponible para la
+                            comunicación.
+                        </p>
+
+                        <p>
+                            Otro método de compartición del acceso en el medio se basa en la distribución de éste por
+                            parte
+                            de un
+                            dispositivo maestro. Por ejemplo, en la tecnología Bluetooth, los dispositivos próximos
+                            forman
+                            una red
+                            llamada piconet. En cada piconet se elige un dispositivo maestro que va preguntando a los
+                            demás
+                            dispositivos
+                            (que hacen las funciones de esclavo) quién debe utilizar el medio. En el caso de que alguien
+                            lo
+                            necesite, lo
+                            tendrá disponible durante cierto tiempo.</p>
+
+
+                        <h2 align="center">Redes de conmutadas</h2>
+                        <p>
+                            Cuando se va a enviar datos a largas distancias (e incluso a no tan largas), este debe pasar
+                            por
+                            varios
+                            nodos intermedios. Los cuáles son los encargados de dirigir los datos para que lleguen a su
+                            destino. Por
+                            lo cual se hace uso de lo que es una red conmutada. ya que estas Consisten en un conjunto de
+                            nodos
+                            interconectados entre sí, a través de medios de transmisión, formando así la mayoría de las
+                            veces una
+                            topología mallada, donde la información se traslada encaminándola del nodo de origen al nodo
+                            destino
+                            mediante conmutación entre nodos intermedios.</p>
+
+                        <p>
+                            Una transmisión de este tipo tiene 3 fases:</p>
+
+                        <ul>
+                            <li>Establecimiento de la conexión.</li>
+                            <li>Transferencia de la información.</li>
+                            <li>Liberación de la conexión</li>
+                        </ul>
+
+                        <p>
+                            Así mismo podemos decir que Se entiende por conmutación en un nodo, a la conexión física o
+                            lógica, de
+                            un camino de entrada al nodo con un camino de salida del nodo, con el fin de transferir la
+                            información.</p>
+
+                        <p>
+                            En pocas palabras se puede decir que una red conmutada es aquella que permite la
+                            comunicación de
+                            nodo
+                            a nodo a través de su conexión, para facilitar el traslado de información.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

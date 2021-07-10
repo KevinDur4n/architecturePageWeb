@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+	<title>Arquitectura de Computadoras</title>
+	<meta charset="utf-8">
+	<!-- Agregamos un icono a la pestaña-->
+	<link rel="shortcut icon" href="..\media\images\favicon.png">
+
+	<!-- Agregamos la hojas de estilo -->
+	<link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+	<!-- Agregamos fuentes de la API Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+		rel="stylesheet">
+
+	<script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+	<table>
+		<!-- Creamos la maquetacion de la pagina-->
+		<tr id="Header"></tr>
+		<tr id="Contenido_Temario">
+			<td id="Navgador" class="listaContenido">
+				<div id="Navegacion" class="navegador">
+					<!-- Este div contendra una lista de los temarios. -->
+				</div>
+			</td>
+			<td id="Contenido">
+				<!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+				<div id="Contenido" class="contenido">
+					<h2 align="center">Introduccion a Arquitectura de computadoras</h2>
+					<p>
+						La arquitectura de computadoras es el diseño conceptual y la estructura operacional fundamental
+						de un sistema que conforma una computadora. Es decir, es un modelo y una descripción funcional
+						de los requerimientos y las implementaciones de diseño para varias partes de una computadora,
+						con especial interés en la forma en que la unidad central de proceso (CPU) trabaja internamente
+						y accede a las direcciones de memoria.<br><br>La arquitectura de una computadora explica la
+						situación de sus componentes y permite determinar las posibilidades de un sistema informático,
+						con una determinada configuración, pueda realizar las operaciones para las que se va a utilizar.
+						La arquitectura básica de cualquier ordenador completo está formado por solo 5 componentes
+						básicos: procesador, memoria RAM, disco duro, dispositivos de entrada/salida y software.
+					</p>
+					<div class="imagesCenter">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/E_vfzzInCFo"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					</div>
+					<hr>
+					<h2 align="center"> Modelos de Arquitectura</h2 align="center">
+
+					<h4>Clasicas: Modelo Von Neumann</h4>
+					<p>
+						La arquitectura Von Neumann tiene sus orígenes en el trabajo del matemático John Von Neumann
+						desarrollado con John Mauchly y John P. Eckert y divulgado en 1945 en la Moore School de la
+						Universidad de Pensilvania, Estados Unidos, en el que se presentaba e EDVAC ( Electronic
+						Discrete Variable Automatic Computer). De aquí surgió la arquitectura del programa almacena en
+						memoria y búsqueda/ejecución secuencial de instrucciones. En términos generales una computadora
+						tiene que realizar 3 funciones:
+					</p>
+					<ul type="Circle">
+						<li>Procesamiento de Datos</li>
+						<li>Almacenamiento de Datos</li>
+						<li>Transferencia de Datos</li>
+					</ul>
+					<p>
+						Tal que un PC (Personal Computer) debe procesar datos, transformando la información recibida, de
+						igual forma tiene que almacenar datos, como resultado final de estas. También debe de realizar
+						transferencia de datos entre su entorno y el mismo. La arquitectura de un computador hace
+						referencia a la organización de sus elementos en módulos con una funcionabilidad definida y a la
+						iteración entre ellos.
+					</p>
+					<!-- Creamos un div para centrar la imagen -->
+					<div class="imagesCenter">
+						<img src="..\..\media\images\modeloVonNeumann.jpg">
+						<p class="pieImagen">Estructura de computador Von Neumann</p>
+					</div>
+					<h4>Clasicas: Modelo Harvard</h4>
+					<p>
+						Este modelo, que utilizan los Microcontroladores PIC, tiene la unidad central de proceso (CPU)
+						conectada a dos memorias (una con las instrucciones y otra con los datos) por medio de dos buses
+						diferentes.
+					</p>
+					<div class="imagesCenter">
+						<img src="..\..\media\images\modeloHarvard.png">
+						<p class="pieImagen">Estructura de computador Hardvard</p>
+					</div>
+					<p>
+						Una de las memorias contiene solamente las instrucciones del programa (Memoria de Programa), y
+						la otra sólo almacena datos (Memoria de Datos).
+					</p>
+					<p>
+						Ambos buses son totalmente independientes lo que permite que la CPU pueda acceder de forma
+						independiente y simultánea a la memoria de datos y a la de instrucciones. Como los buses son
+						independientes estos pueden tener distintos contenidos en la misma dirección y también distinta
+						longitud.Tambien la longitud de los datos y las instrucciones puede ser distinta, lo que
+						optimiza el uso de la memoria en general.
+					</p>
+					<p>
+						Para un procesador de Set de Instrucciones Reducido, o RISC (Reduced Instrucción Set Computer),
+						el set de instrucciones y el bus de memoria de programa pueden diseñarse de tal manera que todas
+						las instrucciones tengan una sola posición de memoria de programa de longitud.
+					</p>
+					<p>
+						Además, al ser los buses independientes, la CPU puede acceder a los datos para completar la
+						ejecución de una instrucción, y al mismo tiempo leer la siguiente instrucción a ejecutar.
+					</p>
+					<table border="1" class="ventajasDesventajasHarvard">
+						<tr>
+							<th>Ventajas</th>
+							th>Desventajas</th>
+
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>
+										El tamaño de las instrucciones no está relacionado con el de los datos, y por lo
+										tanto puede ser optimizado para que cualquier instrucción ocupe una sola
+										posición de memoria de programa, logrando así mayor velocidad y menor longitud
+										de programa.
+									</li>
+									<li>
+										El tiempo de acceso a las instrucciones puede superponerse con el de los datos,
+										logrando una mayor velocidad en cada operación.
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>
+										La principal desventaja de esta arquitectura; el bus de datos y direcciones
+										único se convierte en un cuello de botella por el cual debe pasar toda la
+										información que se lee de o se escribe a la memoria, obligando a que todos los
+										accesos a esta sean secuenciales.
+									</li>
+									<li>
+										Limita el grado de paralelismo (acciones que se pueden realizar al mismo tiempo)
+										y por lo tanto, el desempeño de la computadora.
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<!---------------------------------------------------------------------------------------------------------->
+					<!-- Arquitectura de Computadoras-->
+					<h4 id="2">Segmentadas</h2>
+						<p>
+							Las arquitecturas segmentadas o con segmentación del cauce buscan mejorar el desempeño
+							realizando paralelamente varias etapas del ciclo de instrucción al mismo tiempo.
+						</p>
+						<p style="font-style: italic;">Generalidades</p>
+						<!-- Usamos el atributo sytle para evitar hacer una clase-->
+						<ul>
+							<li>
+								Un ciclo de instrucción (también llamado ciclo de fetch-and-execute o ciclo de
+								fetch-decode-execute en inglés) es el período que tarda la unidad central de proceso
+								(CPU) en ejecutar una instrucción de lenguaje máquina.
+							</li>
+							<li>
+								Comprende una secuencia de acciones determinada que debe llevar a cabo la CPU para
+								ejecutar cada instrucción en un programa.
+							</li>
+							<li>
+								Cada instrucción del juego de instrucciones de una CPU puede requerir diferente número
+								de ciclos de instrucción para su ejecución.
+							</li>
+							<li>
+								Un ciclo de instrucción está formado por uno o más ciclos máquina.
+							</li>
+						</ul>
+						<h5>¿Que es la segmentacion o pipeling?</h5>
+						<p>
+							La segmentación (pipelining)es una técnica de implementación por la cual se solapa la
+							ejecución de múltiples instrucciones.Hoy día, la segmentación es la técnica de
+							implementación clave utilizada para hacer CPU rápidas.
+						</p>
+						<div class="imagesCenter">
+							<img src="..\..\media\images\segmentacion.png">
+						</div>
+						<p>
+							La segmentación es como una línea de ensamblaje: cada etapa de la segmentación completa una
+							parte de la instrucción. Como en una línea de ensamblaje de automóviles, el trabajo que va a
+							realizar en una instrucción se descompone en partes más pequeñas, cada una de las cuales
+							necesita una fracción del tiempo necesario para completar la instrucción completa. Cada uno
+							de estos pasos se define como etapa de la segmentación o segmento. Las etapas están
+							conectadas, cada una a la siguiente, para formar una especie de cauce las instruccione se
+							entran por un extremo, son procesadas a través de las etapas y salen por el otro extremo.
+						</p>
+						<p>
+							La productividad de la segmentación está determinada por la frecuencia con que una
+							instrucción salga del cauce. Como las etapas están conectadas entre sí, todas las etapas
+							deben estar listas para proceder al mismo tiempo. El tiempo requerido para desplazar una
+							instrucción, un paso, a lo largo del cauce es un ciclo máquina. La duración de un ciclo
+							máquina está determinada por el tiempo que necesita la etapa más lenta (porque todas las
+							etapas progresan a la vez). Con frecuencia, el ciclo máquina es un ciclo de reloj (a veces
+							dos, o raramente más), aunque el reloj puede tener múltiples fases.
+							El objetivo del diseñador es equilibrar la duración de las etapas de la segmentación
+						</p>
+						<p>
+							Bajo estas condiciones, la mejora de velocidad debida a la segmentación es igual al número
+							de etapas. Sin embargo, habitualmente, las etapas no están perfectamente equilibradas;
+							además, la segmentación involucra algún gasto.
+							Así, el tiempo por instrucción en la máquina segmentada no tendrá su valor mínimo posible,
+							aunque pueda estar próximo (digamos en un 10 por 100)
+						</p>
+						<p>
+							La <i>segmentación</i> consigue una reducción en el tiempo de ejecución medio por
+							instrucción. Esta reducción se puede obtener decrementando la duración del ciclo de reloj de
+							la máquina segmentada o disminuyendo el número de ciclos de reloj por instrucción, o
+							haciendo ambas cosas. Normalmente, el mayor impacto está en el número de ciclos de reloj por
+							instrucción, aunque el ciclo de reloj es, con frecuencia, más corto en una máquina
+							segmentada (especialmente en supercomputadores segmentados). En las secciones de
+							segmentación segmentada avanzada de este capítulo veremos qué profundidad de segmentación se
+							puede utilizar para decrementar el ciclo de reloj y mantener un CPI bajo.
+						</p>
+						<p>
+							La segmentación es una técnica de implementación, que explota el paralelismo entre las
+							instrucciones de un flujo secuencial. Tiene la ventaja sustancial que, de forma distinta a
+							algunas técnicas de aumento de velocidad, no es visible al programador.
+						</p>
+						<h4 id="3">Arquitectura de Multiprocesamiento</h4>
+						<p>
+							Cuando se desea incrementar el desempeño más allá de lo que permite la técnica de
+							segmentación del cauce (límite teórico de una instrucción por ciclo de reloj), se requiere
+							utilizar más de un procesador para la ejecución del programa de aplicación.
+						</p>
+						<div class="imagesCenter">
+							<img src="..\..\media\images\multiprocesamiento_memoriaCompartida.jpg">
+						</div>
+						<p>
+							El alto rendimiento y bajo coste de los microprocesadores inspiraron un renovado interés en
+							los multiprocesadores en los años ochenta. Varios microprocesadores se pueden colocar sobre
+							un bus común porque:
+						</p>
+						<ul>
+							<li>
+								Son mucho más pequeños que los procesadores multichip.
+							</li>
+							<li>
+								Las caches pueden disminuir el tráfico del bus y los protocolos de coherencia pueden
+								mantener caché y memoria consistente.
+							</li>
+						</ul>
+						<p>El tráfico por procesador y el ancho de banda del bus determinan el número de procesadores en
+							dicho multiprocesador.
+						</p>
+						<p>
+							Un reloj del sistema reside en la tarjeta madre. Éste envía una señal a todos los
+							componentes de la computadora en ritmo, como un metrónomo. Generalmente, este ritmo se
+							genera como una onda cuadrada, como la siguiente:
+						</p>
+						<ul>
+							<li>Cada onda en esta señal mide un ciclo de reloj.</li>
+							<li>Si el reloj del sistema funciona a 100MHZ, esto significa que hay 100 millones de ciclos
+								del reloj en un segundo. </li>
+							<li>Cada acción en la computadora se marca con un tiempo mediante estos ciclos del reloj y
+								para realizarse, cada acción toma cierto número de ciclos del reloj. </li>
+							<li>Cuando se procesa una solicitud de la memoria, por ejemplo, el controlador de la memoria
+								puede informar al procesador que los datos requeridos llegarán en seis ciclos de reloj.
+								Es posible que el CPU y otros dispositivos funcionen más rápido o más lento que el reloj
+								del sistema. </li>
+						</ul>
+						<p>
+							Por ejemplo, cuando un reloj del sistema de 100MHZ interactúa con un CPU de 400MHZ, cada
+							dispositivo entiende que cada ciclo de reloj del sistema es igual a cuatro ciclos de reloj
+							del CPU; éstos utilizan un factor de cuatro para sincronizar sus acciones. Tamaño de la
+							palabra = Una palabra es la cantidad de datos que la CPU puede procesar en un ciclo de
+							reloj.
+						</p>
+						<ul>
+							<li>Un procesador de 8 bits puede manejar 8 bits cada vez. Los procesadores pueden ser,
+								hasta ahora, de 8-, 16-, 32-, o 64- bits</li>
+							<li>Cuanto más grande sea el número = más rápida será la procesamiento </li>
+						</ul>
+						<u><b><i>Las CPUs de multiprocesamiento se clasifican de la siguiente manera: </i></b></u>
+						<ul>
+							<li>SISO – (Single Instruction, Single Operand ), computadoras independientes. </li>
+							<li>SIMO – (Single Instruction, Multiple Operand ), procesadores vectoriales. </li>
+							<li>MISO – (Multiple Instruction, Single Operand ), no implementado.</li>
+							<li>MIMO – (Multiple Instruction, Multiple Operand ) sistemas SMP, Clusters.</li>
+						</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

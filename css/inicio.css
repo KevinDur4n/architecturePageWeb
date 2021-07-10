@@ -1,0 +1,339 @@
+/*
+Esta hoja de estilos sera para el intro del Sitio Web
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+*/
+/*****************************************************************/
+								/* Body's*/
+
+body.fondo{
+	background: url("../media/images/background_page.jpg");
+	
+	background-attachment: fixed;
+	border: 25px;
+	/*Colocamos una fuente por defualt al body*/
+	font-family: 'Nunito Sans', sans-serif;
+	text-align: justify;
+}
+/*****************************************************************/
+			/* DIV's para maquetacion de la pagina*/
+
+div.contenedor{
+	margin: 50px;
+}
+
+div.header{
+	background: url("../media/images/background_header.jpg");
+	background-size: cover;
+	border-radius: 5px;
+	height: 90px;
+
+
+}
+div.sitios{
+	background-color: gray;
+}
+/*Clases para la parte de navegacion y del contenido */
+div.hoja{
+	margin-top: 2px;
+}
+
+div.navegador{
+	background-color: #FEFDFD;
+	width: 275px;
+	height: 100%;
+	border-radius: 5px;
+	margin-top: 0px;
+	margin: 20px;
+	margin-left: 0;  
+	padding: 10px;
+	/*Es poscionado como un elemento normal, en las posiciones indicadas*/
+	 
+}
+
+div.contenido{
+	background-color: #FEFDFD;
+	border-radius: 5px;
+	margin: 15px;
+	align-content: initial;
+	margin-right: 0;
+	padding: 20px; /*Alejar las letras del DIV*/
+	position: relative;
+	
+}
+div.imagesCenter{
+	display:block; /*Muestra la imagen como un elemento <p>*/
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center
+}
+div.twoColumns{
+	width: 50%;
+}
+.lateral-left{
+	width: 100px;
+}
+.lateral-right{
+	width: 100px;
+}
+.table-Inicio{
+	width: 80%;
+    min-width: 1000px;
+    min-height: 650px;
+    margin: 0px auto;
+}
+/*****************************************************************/
+					/*Clases para <P>*/
+p.tituloHeader{
+	color: white;
+	font-family: 'Zen Dots', cursive;
+	text-align: center;
+	font-size: 200%;
+	margin: 0; /*Deshabilitar margen de la fuente*/
+}
+/*Estilo para los links a los sitios*/
+p.sitiosHeader{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 150%;
+	margin: 0;
+}
+
+
+p.pieImagen{
+	
+	line-height:115%;
+	text-transform:uppercase;
+	text-align: center;
+}
+/*****************************************************************/
+					/*Clases para LINKS<a>*/
+/*Solamente los links del elemento Sitios se les asignara este estilo*/
+#Sitios a{
+	color: white;
+	text-decoration: none; /*Quitar sublineado a los links*/
+}
+
+a.links{
+	color: black;
+	text-decoration: none; /*Quitar sublineado a los links*/
+}
+a.links-intro{
+	color: rgb(255, 255, 255);
+	text-decoration: none; /*Quitar sublineado a los links*/
+}
+
+.intros:hover{
+	background-color: #1e08805b;
+	
+}
+
+.intros{
+	transition: all 0.2s;
+	
+}
+
+
+
+/*****************************************************************/
+					/*Clases para <img>*/
+
+
+/*****************************************************************/
+					/*Clases para <table>*/
+table.ventajasDesventajasHarvard{
+  width: 100%;	/*Ocupa todo el espacio*/
+  border-collapse: collapse; /*Contendra un border mas fino*/
+  padding-top: 5px;
+}
+th{
+	text-align: center;
+}
+/*Convertimos la lista de los temas en un bloque <p>*/
+td.listaContenido{
+	display: block;
+	padding: 15px;
+}
+
+/*****************************************************************/
+				/*Clases para la barra de navegacion*/
+
+#menu *{ list-style:none;
+		  margin: 0px;}
+#menu li{ line-height:125%;}	/*Salto de lineas*/
+#menu a:link{color:black; text-decoration:none;}
+#menu a:hover{color: rgb(35, 102, 189);}
+/* Icono para items que no contengan lista*/
+#menu li a:before{ content:"\025b8"; color:rgb(148, 36, 36); } 
+
+#menu input[name="list"] {
+	position: absolute;
+	left: -10em;
+	}
+/* Icono para items que no este checked*/
+#menu label:before{ content:"\025b8"; margin-left: 0px;} 
+/* Icono para items que este checked*/
+#menu input:checked ~ label:before{ content:"\025be";}
+/* Como se muestra por defult todoas las etiqutas con clase interior*/
+#menu .interior{display: block;
+				margin: 0;}
+/* Al seleccionarlas se origina un checked y realiza algo sobre la etitquetas ul*/
+#menu input:checked ~ ul{display:block;}
+/*display: block Que se muestra el bloque de la etiqueta*/
+
+/****************************************************************************/
+					/* BLOQUE PARA IMAGENES */
+img.OrgProcesador{
+	content: url("../media/images/unidad_2/OrgProcesador.jpg");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 384px;
+	/*Modificar ancho*/
+	width: 462px;
+}
+img.RegistrosControl{
+	content: url("../media/images/unidad_2/RegistrosControl.jpg");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 163px;
+	/*Modificar ancho*/
+	width: 256px;
+}
+img.cicloFDE{
+	content: url("../media/images/unidad_2/ciclo.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 300px;
+	/*Modificar ancho*/
+	width: 350px;
+}
+img.lav1{
+	content: url("../media/images/unidad_2/Lavanderia1.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 431px;
+	/*Modificar ancho*/
+	width: 689px;
+}
+img.lav2{
+	content: url("../media/images/unidad_2/Lavanderia2.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 431px;
+	/*Modificar ancho*/
+	width: 689px;
+}
+img.d1{
+	content: url("../media/images/unidad_2/d1.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 121px;
+	/*Modificar ancho*/
+	width: 808px;
+}
+img.d2{
+	content: url("../media/images/unidad_2/d2.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 178px;
+	/*Modificar ancho*/
+	width: 808px;
+}
+img.d3{
+	content: url("../media/images/unidad_2/d3.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 134px;
+	/*Modificar ancho*/
+	width: 808px;
+}
+img.d4{
+	content: url("../media/images/unidad_2/d4.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 134px;
+	/*Modificar ancho*/
+	width: 808px;
+}
+img.d5{
+	content: url("../media/images/unidad_2/d5.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 134px;
+	/*Modificar ancho*/
+	width: 808px;
+}
+img.casos1{
+	content: url("../media/images/unidad_2/casos1.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 98px;
+	/*Modificar ancho*/
+	width: 329px;
+}
+img.casos2{
+	content: url("../media/images/unidad_2/casos2.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 98px;
+	/*Modificar ancho*/
+	width: 329px;
+}
+img.Pentium{
+	content: url("../media/images/unidad_2/Pentium4.PNG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 374px;
+	/*Modificar ancho*/
+	width: 402px;
+}
+img.teclado{
+	content: url("../media/images/unidad_2/teclado.JPG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 285px;
+	/*Modificar ancho*/
+	width: 580px;
+}
+img.raton{
+	content: url("../media/images/unidad_2/raton.JPG");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 185px;
+	/*Modificar ancho*/
+	width: 350px;
+}
+img.pantalla{
+	content: url("../media/images/unidad_2/pantalla.jpg");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 216px;
+	/*Modificar ancho*/
+	width: 300px;
+}
+img.bocinas{
+	content: url("../media/images/unidad_2/bocinas.jpg");
+	display: block;
+	margin:auto;
+	/*Modificar altura*/
+	height: 216px;
+	/*Modificar ancho*/
+	width: 300px;
+}

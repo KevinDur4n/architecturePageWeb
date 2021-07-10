@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                <p class='contenido'>Ciclo Fetch-Decode-Execute</p>
+                <p class='texto'>
+                    El encargado de ejecutar un programa en una computadora u otro sistema computacional es el CPU, lo
+                    realiza siguiendo el llamado ciclo Fetch-Decode-Execute, con este ciclo se ejecutan todas las
+                    tareas que una computadora puede realizar.</p>
+                <p class='texto'>
+                    Este ciclo tiene algunas variantes y conforme ha avanzado el tiempo y la tecnología ha sufrido algunos
+                    cambios, pero el ciclo básico se conforma de las siguientes etapas:</p>
+                <ul>
+                    <li class='textoListas'><b>Traer la instrucción:</b> Se obtiene la instrucción desde memoria y se almacena en el
+                        registro del CPU
+                        para instrucciones.</li>
+                    <li class='textoListas'><b>Decodificar la instrucción:</b> Se identifica el modo de direccionamiento de la
+                        instrucción y la ubicación
+                        de los datos a tratar, ya sea de memoria, registro o instrucción directamente.</li>
+                    <li class='textoListas'><b>Carga de Parámetros:</b> Se ejecuta la lectura, cargando todos los datos identificados en
+                        el paso
+                        anterior.</li>
+                    <li class='textoListas'><b>Ejecutar:</b> Se ejecuta la instrucción ya configurada, realiza la tarea indicada, ya sea
+                        una suma, resta,
+                        almacenar información, extraer información etc.</li>
+                    <li class='textoListas'><b>Almacenar:</b> Se almacena el resultado obtenido de ejecutar la instrucción, por ejemplo,
+                        el resultado de
+                        una suma o un índice (Número) como resultado de éxito de almacenar u obtener información de un archivo,
+                        entre otros.</li>
+                    <li class='textoListas'><b>Actualizar PC:</b> Esta etapa es la de actualizar el registro PC (Program Counter) que
+                        contiene la siguiente
+                        dirección a ejecutar.</li>
+                </ul>
+                <p class='texto'>
+                    Evidentemente al ser un ciclo estas etapas se repiten constantemente durante el funcionamiento de la
+                    computadora.</p>
+                <p class='texto'>
+                    Se debe considerar que el ciclo expuesto anteriormente es muy básico. Como se mencionaba hoy en día estos
+                    ciclos han tenido algunas alteraciones y optimizado de gran manera, como se sabe los sistemas de hoy en día
+                    son multitareas, lo cual conlleva a una alteración en este ciclo, además de las diferentes técnicas para reducir
+                    el tiempo de ejecución de instrucciones con temas de concurrencia y paralelismo en los procesadores modernos.</p>
+                <p class='texto'>
+                    El ciclo expuesto nos muestra un poco la forma en la que las computadoras funcionan, todo el proceso que
+                    conlleva ejecutar una instrucción que puede parecer muy simple, además este ciclo básico permite darse
+                    una idea de cómo ha evolucionado los procesadores y las técnicas para reducir el tiempo de ejecución dado
+                    que los sistemas actuales ejecutan de forma simultánea muchas veces este ciclo, siendo este modificado y
+                    más eficiente.</p>
+                <img class='cicloFDE'>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

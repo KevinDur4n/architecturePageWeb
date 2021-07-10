@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <p class='contenido'>Registros visibles para el usuario</p>
+                    <p class='texto'>
+                        Un registro visible por el usuario es aquél que puede ser referenciado por medio del
+                        lenguaje máquina que ejecuta el procesador. Podemos clasificarlos en las siguientes categorías:
+                    </p>
+                    <ul>
+                        <li class='textoListas'>Uso general: pueden ser asignados por el programador a diversas
+                            funciones.
+                            A veces, su uso dentro del repertorio de instrucciones es ortogonal a la operación. Es
+                            decir,
+                            cualquier registro de uso general puede contener el operando para cualquier código de
+                            operación.
+                            Sin embargo, existen restricciones. Por ejemplo, puede haber registros específicos para
+                            operaciones
+                            en coma flotante y para operaciones con la pila. </li>
+                        <p></p>
+                        <li class='textoListas'>Datos: pueden usarse únicamente para contener datos y no se pueden
+                            emplear en
+                            el cálculo de la dirección de un operando. </li>
+                        <p></p>
+                        <li class='textoListas'>Direcciones: pueden ser de uso más O menos general, o pueden estar
+                            dedicados a un modo de direccionamiento particular. Entre otros, se pueden citar los
+                            siguientes ejemplos: </li>
+                        <ul>
+                            <li class='textoListas'>Punteros de segmento: en una máquina con direccionamiento segmentado
+                                un
+                                registro de segmento contiene la dirección de la base del segmento. Puede haber
+                                múltiples registros: por ejemplo uno para el sistema operativo y otro para el
+                                proceso actual. </li>
+                            <p></p>
+                            <li class='textoListas'>Registros índice: se usan para direccionamiento indexado y pueden
+                                ser
+                                autoindexados. </li>
+                            <p></p>
+                            <li class='textoListas'>Puntero de pila: si existe direccionamiento a pila visible por el
+                                usuario, normalmente hay un registro dedicado que apunta a la cabecera de ésta. Ello
+                                permite un direccionamiento implícito; es decir, apilar (push), desapilar (pop) y
+                                otras instrucciones de la pila no necesitan contener un operando explícito
+                                referente a ella.</li>
+                        </ul>
+                        <p></p>
+                        <li class='textoListas'>Códigos de condición: (también llamados indicadores o «flags») son bits
+                            fijados por el hardware del procesador como resultado de alguna operación. Por ejemplo, una
+                            operación aritmética puede producir un resultado positivo, negativo, nulo o con
+                            desbordamiento. Además de
+                            almacenarse el propio resultado en un registro o en la memoria, se obtiene también un código
+                            de
+                            condición.Los bits de códigos de condición se agrupan en uno o más registros. Normalmente
+                            forman parte de un registro de control. </li>
+                    </ul>
+                    <img class='OrgProcesador'>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

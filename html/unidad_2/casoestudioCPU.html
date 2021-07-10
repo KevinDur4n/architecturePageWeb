@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <p class='contenido'>Casos de estudio de CPU reales</p>
+                    <p class='tituloInterno'>I-8086</p>
+
+                    <p class='texto'>
+                        Los modos de direccionamiento del 8086 (Crawford y Gelsinger, 1987) son muy irregulares. Los
+                        registros del
+                        procesador, se usan para contener los datos con que se está trabajando puesto que el acceso a
+                        los registros
+                        es mucho más rápido que los accesos a memoria. Se pueden realizar operaciones aritméticas y
+                        lógicas,
+                        comparaciones, entre otras. Hay un campo para un registro (reg), que especiﬁca uno de los
+                        operandos, y
+                        otros dos campos (mod y r/m) para el otro.</p>
+                    <img class='casos1'>
+
+                    <p class='texto'>
+                        Los modos del 8086 son indirectos por registro, indexados o directos por registro.</p>
+
+                    <p class='texto'>
+                        Registros Propósito General:</p>
+                    <ul>
+                        <li class='textoListas'>Registro AX: El registro AX es el registro acumulador, es utilizado para
+                            operaciones que implican entrada/salida, y multiplicación y división (estas dos últimas en
+                            conjunto con
+                            el registro DX)</li>
+                        <li class='textoListas'>Registro BX: El registro BX es el registro base, y es el único registro
+                            de
+                            propósito general que puede ser un índice para direccionamiento indexado </li>
+                        <li class='textoListas'>Registro CX: El registro CX es conocido como el registro contador. Puede
+                            contener
+                            un valor para controlar el número de veces que un ciclo se repite.</li>
+                        <li class='textoListas'>Registro DX: El registro DX es el registro de datos.</li>
+                    </ul>
+
+                    <p class='texto'>
+                        Registros Índice:</p>
+
+                    <ul>
+                        <li class='textoListas'>Registro SI: El registro índice fuente de 16 bits es requerido por
+                            algunas
+                            operaciones con cadenas de caracteres.</li>
+                        <li class='textoListas'>Registro DI: El registro índice destino también es requerido por algunas
+                            operaciones con cadenas de caracteres.</li>
+
+                    </ul>
+
+                    <p class='texto'>
+                        Registros Apuntadores:</p>
+
+                    <ul>
+                        <li class='textoListas'>Registro SP: Apuntador de pila de 16 bits proporciona un valor de
+                            desplazamiento
+                            que se refiere a la palabra actual que está siendo procesada en la pila.</li>
+                        <li class='textoListas'>Registro BP: El apuntador base de 16 bits facilita la referencia de
+                            parámetros
+                            dentro de la pila.</li>
+                    </ul>
+
+                    <p class='tituloInterno'> Motorola 68000</p>
+
+                    <p class='texto'>
+                        En el Motorola 68000 el mismo direccionamiento lleva implícito el tipo de registro sobre el que
+                        trabaja
+                        (direcciones o datos). Está basado en dos bancos de 8 registros de 32 bits. Un banco es de datos
+                        (Dn) y
+                        el otro de punteros (An). Además contiene un contador de programa de 32 bits y un registro de
+                        estado de 16
+                        bits. Los registros de datos (D0 a D7) se pueden usar como registros de 32 bits (.l), 16 bits
+                        (.w) y 8 bits
+                        (.b). Cualquiera de ellos puede usarse como acumulador, índice o puntero.
+                        Acepta los siguientes modos de direccionamiento:</p>
+
+                    <ul>
+                        <li class='textoListas'>Implícito (o inherente).</li>
+                        <li class='textoListas'>Inmediato.</li>
+                        <li class='textoListas'>Absoluto.</li>
+                        <li class='textoListas'>Directo a registro.</li>
+                        <li class='textoListas'>Indirecto.</li>
+                        <li class='textoListas'>Relativo a PC con desplazamiento.</li>
+                        <li class='textoListas'>Relativo a PC con índice y desplazamiento.</li>
+                    </ul>
+
+                    <p class='tituloInterno'>80386</p>
+
+                    <p class='texto'>
+                        La CPU está compuesta por la unidad de ejecución y la unidad de instrucciones. La unidad de
+                        ejecución
+                        contiene los ocho registros de 32 bits de propósito general que se utilizan para el cálculo de
+                        direcciones
+                        y operaciones con datos y un barrel shifter de 64 bits que se utiliza para acelerar las
+                        operaciones de
+                        desplazamiento, rotación, multiplicación y división. Para este microprocesador existe un modo
+                        nuevo que
+                        requiere un byte adicional denominado SIB (escala, índice, base) que se añade al byte de
+                        operandos y cuyo
+                        formato es el siguiente: Ese byte adicional especifica un factor de escala y dos registros (base
+                        e
+                        índice).</p>
+
+                    <img class='casos2'>
+
+                    <p class='texto'>
+                        El 80386 tiene registros de 32 bits en las siguientes categorías:</p>
+
+                    <ul>
+                        <li class='textoListas'>Registros de propósito general.</li>
+                        <li class='textoListas'>Registros de segmento.</li>
+                        <li class='textoListas'>Puntero de instrucciones</li>
+                        <li class='textoListas'>Indicadores.</li>
+                        <li class='textoListas'>Registros de control (nuevos en el 80386).</li>
+                        <li class='textoListas'>Registros de depuración (debug) (nuevos en el 80386).</li>
+                        <li class='textoListas'>Registros de test (nuevos en el 80386).</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

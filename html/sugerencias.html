@@ -1,0 +1,63 @@
+<!-- 
+	Este Archivo contendra el HTML de la pagina de 
+	sugerencias.
+	@Autor: Kevin Aram Duran Cerecero
+	@Carrera: Sistemas Computacionales
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\css\sugerencias.css">
+    <!-- 
+		Algunos estilos de la pagina principal se usaran de igual forma aqui
+		Por lo que conviene reutilizarlos.
+	 -->
+    <link rel="stylesheet" type="text/css" href="..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+
+<body class="fondo">
+    <div id="Header" class="header">
+        <p class="tituloHeader">ARQUITECTURA DE COMPUTADORAS</p>
+        <div id="Sitios" class="sitios">
+            <p class="sitiosHeader">
+                <a href="/html/template.html">Pagina Principal </a>|
+                <a href="/html/sugerencias.html">Sugerencias</a>|
+                <a href="/html/acerca.html">Acerca</a>
+            </p>
+        </div>
+    </div>
+    <!-- Formularo para sugerencias de la creacion del sitio web -->
+    <div id="Form_sugerencias" class="formulario">
+        <h1 align="center">Sugerencias</h1>
+        <p>Desea enviar una recomendacion o sugerencia llene los datos y la recibiremos con mucho gusto</p>
+        <form id="sugerencias" method="get">
+            <p>Nombres: <input class="text" type="text" name="Nombre"> &nbsp; Apellidos: <input class="text" type="text" name="Apellidos"> </p>
+            <p>Correo electronico &nbsp; <input class="text" type="email" name="email"></p>
+            <p>Sexo:
+                <!-- "hm" es un ID agrupo los radios buttons en un grupo -->
+                <!-- Name indica el grupo donde pertenecera -->
+                <input type="radio" name="hm" value="h">Hombre
+                <input type="radio" name="hm" value="m">Mujer
+                <input type="radio" name="hm" value="m">Sin especificar
+            </p>
+            <p>Sugerencias: </p>
+            <!-- Area para escribir las sugerencias -->
+            <textarea class="sugerencias" name="sugerencias" form="sugerencias"></textarea>
+            <p>
+                <input type="submit" name="Enviar">
+                <input type="reset" name="Borrar">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

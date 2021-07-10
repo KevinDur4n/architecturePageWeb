@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+	<title>Arquitectura de Computadoras</title>
+	<meta charset="utf-8">
+	<!-- Agregamos un icono a la pestaña-->
+	<link rel="shortcut icon" href="..\media\images\favicon.png">
+
+	<!-- Agregamos la hojas de estilo -->
+	<link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+	<!-- Agregamos fuentes de la API Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+		rel="stylesheet">
+
+	<script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+	<div id="Header"></div>
+	<table>
+		<!-- Creamos la maquetacion de la pagina-->
+		<tr id="Contenido_Temario">
+			<td id="Navgador" class="listaContenido">
+				<div id="Navegacion" class="navegador">
+					<!-- Este div contendra una lista de los temarios. -->
+				</div>
+			</td>
+			<td id="Contenido">
+				<!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+				<div id="Contenido" class="contenido">
+					<h2 align="center">Analisis de componentes</h2>
+					<hr>
+
+					<h4 id="1">Unidad de procesamiento</h4>
+					<p>
+						La unidad central de procesamiento es conocido como el cerebro de todo computador, debido a que
+						integra los componentes electrónicos que permite la interpretación de instrucciones para
+						realizar alguna operación ya sea logica o aritmetica.
+					</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/operacionescpu.png">
+					</div>
+					<p>
+						Las unidades de procesamiento se componen de una unidad de aritmética lógica la cual realiza las
+						operaciones de las instrucciones, de varios registros internos como puede ser contadores
+						punteros, y la Unidad de control que administra la conexión entre la Unidad aritmética lógica y
+						los registros.
+					</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/componentescpu.png">
+					</div>
+
+					<h4 id="2">Unidad aritmetica logica</h4>
+					<p>
+						Parte de las CPU son la unidad aritmética lógica la cual se introdujo en el modelo propuesto por
+						Von Newman en 1945, utilizada especialmente para realizar operaciones aritméticas y lógicas las
+						cuales son:
+					</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/unidadLogicaAritmetica.png">
+						<p class="pieImagen">Unidad logica aritmetica</p>
+					</div>
+
+					<ul>
+
+						<li>La suma</li>
+						<li>La multiplicación</li>
+						<li>La division</li>
+						<li>operaciones logicas:</li>
+						<ul>
+							<li>Negacion</li>
+							<li>Disyuncion</li>
+							<li>Conjunción</li>
+						</ul>
+					</ul>
+					<p>
+						Las partes que la componen son los registros de entrada que están conectados al bus del sistema,
+						un acumulador, un registro de estado y las señales de control, este ultimo debido a que la
+						unidad de aritmética lógica no puede tomar decisiones, la cual necesita de una unidad de control
+						para poder identificar que operación se realizara, además de administrar los recursos y generar
+						flags.
+					</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/compontesUnidadadLogicaAritmetica.png">
+						<p class="pieImagen">Componentes de Unidad Logica Aritemtica</p>
+					</div>
+					<h4 id="3">Registros</h4>
+					<p>
+						Los registros son memorias de alta velocidad pero de poca capacidad, con el objetivo que el
+						procesador guarde valores muy usados y pueda recuperarlos de manera rápida, son integrados en el
+						microprocesador y existe una variedad de ellos, de distintas maneras como bancos de registros o
+						en memorias SRAM.
+						<br>
+
+					</p>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/registros.png">
+						<p class="pieImagen">Imagen de registros</p>
+					</div>
+					<span>Se derivan en varios tipos de registros como lo son:</span>
+					<ul>
+						<li>Los registros de datos que guardan números enteros, conocidos como acumuladores.</li>
+						<li>Los registros de memoria guardan las direcciones de memoria, este tipo de registros es
+							utilizado en el modelo de Harvard.</li>
+						<li>
+							Los registros de propósito general, guardan a su vez datos y direcciones de memoria, este
+							tipo de registros son usados en el modelo de Von Newman.
+						</li>
+						<li>
+							Los registros de coma flotante guardan datos con este tipo de formato.
+						</li>
+						<li>
+							Los registros de constantes, guardan valores de solo lectura.
+						</li>
+						<li>
+							Los registros de estados determinan cuando instrucción debe ejecutares.
+						</li>
+						<li>
+							Los registros MDR están integrados en el microprocesador y están conectados con el bus de
+							datos, para escribir y leer en el.
+						</li>
+						<li>
+							Y Por ultimo los registros de SPR de propósito especifico, guardan estados del sistemas o
+							instrucciones de puntero.
+						</li>
+					</ul>
+					<br>
+					<div class="imagesCenter">
+						<img src="../../media/images/unidad_1/tiposRegistros.png">
+					</div>
+					<h4 id="4">Buses</h4>
+					<p>En los ordenadores modernos hay varios buses que se dedican a trasladar los datos entre los
+						diferentes componentes del sistema. Los podéis mirar como el sistema circulatorio del cuerpo
+						humano. Y, de la misma manera que este, un desajuste en cualquiera de estos buses puede provocar
+						pérdida de datos y un mal funcionamiento generalizado del sistema.
+					</p>
+
+
+
+					<div class="imagesCenter">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/N9XjBl9EblA"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

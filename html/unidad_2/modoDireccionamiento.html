@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <p class='contenido'>Modos de direccionamiento</p>
+                    <p class='texto'>
+                        Contar con diferentes formatos de instrucciones, implica contar con diferentes formas de obtener
+                        los operandos
+                        de las instrucciones. Por lo general a estas múltiples formas se les conoce como modos de
+                        direccionamiento.
+                        Los modos de direccionamiento en MIPS son:</p>
+
+                    <p class='texto'>
+                        Direccionamiento por registro, donde los operandos son registros. Los datos a operar están
+                        contenidos en 2
+                        registros de 32 bits y el resultado será colocado en otro registro, del mismo tamaño.</p>
+                    <p class='texto'>
+                        Ejemplos de instrucciones que usan este modo de direccionamiento: add, sub, slt, etc.</p>
+                    <img class='d1'>
+
+                    <p class='texto'>
+                        Direccionamiento base o desplazamiento, donde uno de los operandos está en una localidad de
+                        memoria cuya
+                        dirección es la suma de un registro y una constante que forma parte de la misma instrucción.</p>
+                    <p class='texto'>
+                        Ejemplos de instrucciones que usan este modo de direccionamiento: lw, sw, etc.</p>
+                    <img class='d2'>
+
+                    <p class='texto'>
+                        Direccionamiento inmediato, donde uno de los operandos es una constante que está en la misma
+                        instrucción.</p>
+                    <p class='texto'>
+                        Ejemplos de instrucciones que usan este modo de direccionamiento: addi, slti, etc.</p>
+                    <img class='d3'>
+
+                    <p class='texto'>
+                        Direccionamiento relativo al PC, donde se forma una dirección sumando una constante, que está en
+                        la instrucción,
+                        con el registro PC (Program Counter). El resultado de la suma corresponde a la dirección destino
+                        si un brinco
+                        condicional se va a realizar.</p>
+                    <p class='texto'>
+                        Ejemplos de instrucciones que usan este modo de direccionamiento: beq y bne.</p>
+                    <img class='d4'>
+
+                    <p class='texto'>
+                        Direccionamiento pseudo directo, donde la dirección destino de un salto corresponde a la
+                        concatenación de 26
+                        bits que están en la misma instrucción con los bits más significativos del PC.</p>
+                    <p class='texto'>
+                        Ejemplos de instrucciones que usan este modo de direccionamiento: j y jal.</p>
+                    <img class='d5'>
+
+                    <p class='texto'>
+                        Es importante mencionar que estamos estudiando una arquitectura con direcciones de 32 bits, sin
+                        embargo, MIPS,
+                        como muchas otras arquitecturas, tiene una extensión que maneja direcciones de 64 bits. Esto
+                        como una respuesta
+                        a la necesidad de manejar programas cada vez más grandes.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/*
+Esta hoja de estilos sera para la pagina de acerca
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+*/
+/**************************************************************/
+					/*Block para <div>*/
+div.info{
+	background-color: white;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 5px;
+}
+
+div.perfilImages{
+	align-content: left;
+}
+/**************************************************************/
+					/*Block para <img>*/
+img.perfil{
+	width: 15%;
+	height: 15%;
+	border-radius: 250px;
+
+}
+img.pasiones{
+	align-content: center;
+	width: 1333px;
+	
+}

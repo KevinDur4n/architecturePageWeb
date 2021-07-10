@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <h2 align="center">Clasificacion de la computacion Paralela</h2>
+                    <hr>
+                    <p>
+                        Las computadoras paralelas se pueden clasificar de acuerdo con el nivel en el que el hardware
+                        soporta
+                        paralelismo.</p>
+                    <h2 id="1">Computación multinúcleo </h2>
+                    <p>
+                        Un procesador multinúcleo es un procesador que incluye múltiples unidades de ejecución (núcleos)
+                        en el
+                        mismo chip. Los procesadores superescalares pueden ejecutar múltiples instrucciones por ciclo de
+                        un
+                        flujo de instrucciones (hilo), a diferencia de este, un procesador multinúcleo puede ejecutar
+                        múltiples
+                        instrucciones por ciclo de secuencias de instrucciones múltiples. Cada núcleo en un procesador
+                        multinúcleo
+                        potencialmente puede ser superescalar, es decir, en cada ciclo, cada núcleo puede ejecutar
+                        múltiples
+                        instrucciones de un flujo de instrucciones.</p>
+
+                    <h2 id="2">Multiprocesamiento simétrico</h2>
+                    <p>
+                        Un multiprocesador simétrico (SMP) es un sistema computacional con múltiples procesadores
+                        idénticos
+                        que comparten memoria y se conectan a través de un bus. La contención del bus previene el
+                        escalado de
+                        esta arquitectura. Como resultado, los SMPs generalmente no comprenden más de 32 procesadores.
+                    </p>
+
+                    <h2 id="3">Computación distribuida </h2>
+                    <p>
+                        Un ordenador distribuido también conocido como un multiprocesador de memoria distribuida es un
+                        sistema
+                        computacional de memoria distribuida en el que los elementos de procesamiento están conectados
+                        por una
+                        red. Los ordenadores distribuidos son altamente escalables.</p>
+
+                    <h2 id="4">Computación en clúster</h2>
+                    <p>
+                        Un clúster es un grupo de ordenadores débilmente acoplados que trabajan en estrecha
+                        colaboración, de modo
+                        que en algunos aspectos pueden considerarse como un solo equipo. Los clústeres se componen de
+                        varias
+                        máquinas independientes conectadas por una red. Mientras que las máquinas de un clúster no
+                        tienen que
+                        ser simétricas, de no serlo, el balance de carga es más difícil de lograr. El tipo más común de
+                        clúster
+                        es el cluster Beowulf, que es un clúster implementado con múltiples ordenadores comerciales
+                        idénticos
+                        conectados a una red de área local TCP/IP Ethernet.</p>
+
+                    <h2 id="5">Procesamiento paralelo masivo</h2>
+                    <p>
+                        Un procesador paralelo masivo (MPP) es un solo equipo con varios procesadores conectados en red.
+                        Tienen
+                        muchas de las características de los clúster, pero cuentan con redes especializadas de
+                        interconexión en
+                        tanto que las clústeres utilizan hardware estándar para la creación de rede Los MPPs también
+                        tienden a
+                        ser más grandes que los clústeres, con mucho más de 100 procesadores. En un MPP, «cada CPU tiene
+                        su
+                        propia memoria y una copia del sistema operativo y la aplicación. Cada subsistema se comunica
+                        con los
+                        demás a través de una interconexión de alta velocidad.</p>
+                    <div class="imagesCenter">
+                        <img src="../../media/images/unidad_4/PPS.jpg">
+                    </div>
+                    <h2 id="6">Computación distribuida </h2>
+                    <p class='texto'>
+                        La computación distribuida es la forma más distribuida de la computación paralela. Se hace uso
+                        de
+                        ordenadores que se comunican a través de la Internet para trabajar en un problema dado. Debido
+                        al
+                        bajo ancho de banda y la latencia extremadamente alta de Internet, la computación distribuida
+                        normalmente
+                        sólo se refiere a problemas paralelos.</p>
+                        
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

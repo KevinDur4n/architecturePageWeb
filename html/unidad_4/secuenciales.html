@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+ Sitio web creado para la materia de Programcion Web
+ y Arquitectura de computadoras.
+ Este archivo contiene el inidice para navegar a otras
+ paginas  y sera el intro para el sitio web.
+
+ @Autor: Kevin Aram Duran Cercero 
+ @Carrera: Ingenieria En Sistemas Computacionales
+ -->
+<html lang="es">
+
+<head>
+    <title>Arquitectura de Computadoras</title>
+    <meta charset="utf-8">
+    <!-- Agregamos un icono a la pestaña-->
+    <link rel="shortcut icon" href="..\media\images\favicon.png">
+
+    <!-- Agregamos la hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="..\..\css\inicio.css">
+    <!-- Agregamos fuentes de la API Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="..\..\js\getHeaderNavegacion.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="Header"></div>
+    <table>
+        <!-- Creamos la maquetacion de la pagina-->
+        <tr id="Contenido_Temario">
+            <td id="Navgador" class="listaContenido">
+                <div id="Navegacion" class="navegador">
+                    <!-- Este div contendra una lista de los temarios. -->
+                </div>
+            </td>
+            <td>
+                <!-- 
+				Aqui colocaremos todo tipo de contenido.-->
+                <div id="contenido" class="contenido">
+                    <h2 id="1" align="center">Arquitectura de computadores secuenciales</h2 align="center">
+                    <hr>
+                    <p>
+                        Las computadoras secuenciales se basan en el modelo introducido por por John Von Neumann la cual
+                        consiste
+                        en:</p>
+
+                    <ul>
+                        <li>Una Unidad Central de Procesamiento (CPU).</li>
+                        <li>Memoria Principal para almacenar información.</li>
+                        <li>Bus donde fluyan los datos.</li>
+                        <li>Mecanismo de sincronización</li>
+                    </ul>
+
+                    <p>
+                        Por las limitaciones que este tiene se han desarrollado algunas estrategias para aumentar el
+                        rendimiento.</p>
+
+                    <p>
+                        La más conocida es la segmentación de instrucciones Pipeline que consiste en llevar a la cola
+                        de instrucciones la siguiente instrucción que se ejecutara.</p>
+
+                    <p>
+                        En estos sistemas, los valores de las salidas, en un momento dado, no dependen exclusivamente
+                        de los valores de las entradas en dicho momento, sino también de los valores anteriores.</p>
+
+                    <p>
+                        En estos sistemas, los valores de las salidas, en un momento dado, no dependen exclusivamente de
+                        los valores de las entradas en dicho momento, sino también de los valores anteriores. El
+                        sistema mas simple que existe se denomina: <b>Biestable</b></p>
+
+                    <p>
+                        Biestable:</p>
+                    <p>
+                        Es un multivibrador capaz de permanecer en uno de dos estados posibles durante un tiempo
+                        indefinido en ausencia de perturbaciones. Esta característica es ampliamente utilizada en
+                        electrónica digital para memorizar información. El paso de un estado a otro se realiza variando
+                        sus entradas.</p>
+
+                    <p>
+                        La mayoría de estos sistemas están gobernados por señales de reloj a los cuales se los denomina
+                        síncronos. Pero al contrario a todos ellos que no son gobernados por éste, se los conoce como
+                        asíncronos.</p>
+
+                    <p>
+                        Estos pueden encontrarse en forma de circuito integrado (Contador) o como estructuras en
+                        sistemas
+                        programados (Registros de desplazamiento):</p>
+
+                    <p><b>Registros de desplazamiento:</b></p>
+
+                    <p>
+                        Consistente en una serie de biestables, generalmente de tipo D, conectados en cascada, que
+                        basculan de forma sincrónica con la misma señal de reloj.</p>
+
+                    <p><b>Contador:</b></p>
+
+                    <p>
+                        Circuito secuencial construido a partir de biestable y puertas lógicas capaz de almacenar y
+                        contar
+                        los impulsos que recibe en la entrada destinada a tal efecto, asimismo también actúa como
+                        divisor
+                        de frecuencia. </p>
+                    <hr>
+                    <br>
+                    <h2 id="2" align="center">Organización de direcciones de memoria</h2>
+                    <p>
+                        En una memoria volátil se pierde su contenido al interrumpir el suministro de energía.</p>
+                    <ul>
+                        <li>Lo contrario es la persistencia.</li>
+                        <li>Tenemos memorias dinámicas que exigen un refresco (reescritura)
+                            continuado.</li>
+                        <li>Memorias estáticas que no exigen refresco.</li>
+                        <li>Memorias grabables eléctricamente, que perduran sin alimentación.</li>
+                        <li>Memorias de larga vida: CD-ROM, disco duro.</li>
+                    </ul>
+
+                    <p>
+                        En estos sistemas, los valores de las salidas, en un momento dado, no dependen exclusivamente de
+                        los
+                        valores de las entradas en dicho momento, sino también de los valores anteriores.</p>
+
+                    <p>
+                        En estos sistemas, los valores de las salidas, en un momento dado, no dependen exclusivamente de
+                        los
+                        valores de las entradas en dicho momento, sino también de los valores anteriores.</p>
+
+                    <p>
+                        En estos sistemas, los valores de las salidas, en un momento dado, no dependen exclusivamente de
+                        los valores de las entradas en dicho momento, sino también de los valores anteriores. El
+                        sistema mas simple que existe se denomina: <b>Biestable</b></p>
+
+                    <p>
+                        Biestable:</p>
+                    <p>
+                        Es un multivibrador capaz de permanecer en uno de dos estados posibles durante un tiempo
+                        indefinido en ausencia de perturbaciones. Esta característica es ampliamente utilizada en
+                        electrónica digital para memorizar información. El paso de un estado a otro se realiza variando
+                        sus entradas.</p>
+
+                    <p>
+                        La mayoría de estos sistemas están gobernados por señales de reloj a los cuales se los denomina
+                        síncronos. Pero al contrario a todos ellos que no son gobernados por éste, se los conoce como
+                        asíncronos.</p>
+
+                    <p>
+                        Estos pueden encontrarse en forma de circuito integrado (Contador) o como estructuras en
+                        sistemas
+                        programados (Registros de desplazamiento):</p>
+
+                    <p><b>Registros de desplazamiento:</b></p>
+
+                    <p>
+                        Consistente en una serie de biestables, generalmente de tipo D, conectados en cascada, que
+                        basculan de forma sincrónica con la misma señal de reloj.</p>
+
+                    <p><b>Contador:</b></p>
+
+                    <p>
+                        Circuito secuencial construido a partir de biestable y puertas lógicas capaz de almacenar y
+                        contar
+                        los impulsos que recibe en la entrada destinada a tal efecto, asimismo también actúa como
+                        divisor
+                        de frecuencia. </p>
+
+                    <p>
+                        Las memorias se pueden clasificar atendiendo a diferentes criterios. Revisaremos en los
+                        apartados siguientes los más significativos: </p>
+
+                    <p><b>Método de acceso</b></p>
+                    <ul>
+                        <li>Acceso aleatorio (RAM): acceso directo y tiempo de acceso constante e
+                            independiente
+                            de la posición de memoria. </li>
+                        <li>Acceso secuencial (SAM): tiempo de acceso dependiente de la posición de
+                            memoria.</li>
+                        <li>Acceso directo (DAM): acceso directo a un sector con tiempo de acceso
+                            dependiente de la posición, y acceso secuencial dentro del sector. </li>
+                        <li>Asociativas CAM): acceso por contenido.</li>
+                    </ul>
+
+                    <p><b>Soporte físico</b></p>
+                    <ul>
+                        <li>Semiconductor.</li>
+                        <li>Magnéticas.</li>
+                        <li>Ópticas.</li>
+                        <li>Magneto-ópticas.</li>
+                    </ul>
+
+                    <p><b>Alterabilidad</b></p>
+                    <ul>
+                        <li>Semiconductor.</li>
+                        <li>Magnéticas.</li>
+                        <li>Ópticas.</li>
+                        <li>Magneto-ópticas.</li>
+                    </ul>
+
+                    <p><b>Alterabilidad</b></p>
+                    <ul>
+                        <li>RAM: lectura y escritura.</li>
+                        <li>ROM (Read Only Memory): Son memorias de sólo lectura. Existen diferentes
+                            variantes:</li>
+                        <ul>
+                            <li>ROM programadas por máscara, cuya información se escribe en
+                                el proceso de fabricación y no se puede modificar.</li>
+                            <li>PROM, o ROM programable una sola vez. Utilizan una matriz
+                                de diodos cuya unión se puede destruir aplicando sobre ella una sobretensión.</li>
+                            <li>EPROM (ErasablePROM) o RPROM (Reprogramable ROM), cuyo
+                                contenido puede borrarse mediante rayos ultravioletas para volverlas a escribir.</li>
+                            <li>EAROM (Electrically AlterableROM) o EEROM (Electrically
+                                ErasableROM), son memorias que están entre las RAM y las ROM ya que su contenido se
+                                puede volver a escribir por medios eléctricos. Se diferencian de las RAM en que no son
+                                volátiles. </li>
+                            <li>Memoria FLASH. Utilizan tecnología de borrado eléctrico
+                                al igual que las EEPROM, pero pueden ser borradas y reprogramadas en bloques, y no
+                                palabra por palabra como ocurre con las tradicionales EEPROM. Ofrecen un bajo consumo
+                                y una alta velocidad de acceso, alcanzando un tiempo de vida de unos 100.000 ciclos de
+                                escritura.</li>
+                        </ul>
+                    </ul>
+
+                    <p><b>Volatilidad con la fuente de energía</b></p>
+                    <ul>
+                        <li>Volátiles: necesitan la fuente de energía para mantener la información.
+                        </li>
+                        <li>No volátiles: mantienen la información sin aporte de energía.</li>
+                    </ul>
+
+                    <p><b>Duración de la información</b></p>
+                    <ul>
+                        <li>Estáticas: el contenido permanece inalterable mientras están
+                            polarizadas.</li>
+                        <li>Dinámicas: el contenido sólo dura un corto período de
+                            tiempo, por lo que es necesario refrescarlo (reescribirlo) periódicamente.</li>
+                    </ul>
+
+                    <p><b>Ubicación en el computador</b></p>
+                    <ul>
+                        <li>Interna (CPU): registros, cache(L1), cache(L2), cache(L3), memoria
+                            principal</li>
+                        <li>Externa (E/S): discos, cintas, etc.</li>
+                    </ul>
+                    <hr>
+
+                    <h2 id="3" align="center">Sistemas de memoria (compartida)
+                    </h2>
+                    <p>
+                        Un multiprocesador puede verse como un computador paralelo compuesto por varios procesadores
+                        interconectados
+                        que comparten un mismo sistema de memoria.</p>
+
+                    <p>
+                        Los sistemas multiprocesadores son arquitecturas MIMD con memoria compartida. Tienen un único
+                        espacio
+                        de direcciones para todos los procesadores y los mecanismos de comunicación se basan en el paso
+                        de mensajes
+                        desde el punto de vista del programador.</p>
+
+                    <p>
+                        Dado que los multiprocesadores comparten diferentes módulos de memoria, pudiendo acceder a un
+                        mismo módulo
+                        varios procesadores, a los multiprocesadores también se les llama sistemas de memoria
+                        compartida.</p>
+
+                    <div class="imagesCenter">
+                        <img src="../../media/images/unidad_4/SMC1.jpg">
+                    </div>
+                    <p>
+                        Dependiendo de la forma en que los procesadores comparten la memoria, se clasifican en sistemas
+                        multiprocesador UMA, NUMA y COMA.</p>
+
+                    <p>
+                        Multiproceso es tradicionalmente conocido como el uso de múltiples procesos concurrentes en un
+                        sistema
+                        en lugar de un único proceso en un instante determinado. Como la multitarea que permite a
+                        múltiples
+                        procesos compartir una única CPU, múltiples CPUs pueden ser utilizados para ejecutar múltiples
+                        hilos
+                        dentro de un único proceso.</p>
+
+                    <p>
+                        El multiproceso para tareas generales es, a menudo, bastante difícil de conseguir debido a que
+                        puede
+                        haber varios programas manejando datos internos (conocido como estado o contexto) a la vez.</p>
+                    <div class="imagesCenter">
+                        <img src="../../media/images/unidad_4/SMC2.jpg">
+                    </div>
+                    <p>
+                        Los programas típicamente se escriben asumiendo que sus datos son incorruptibles. Sin embargo,
+                        si
+                        otra copia del programa se ejecuta en otro procesador, las dos copias pueden interferir entre sí
+                        intentando ambas leer o escribir su estado al mismo tiempo.</p>
+
+                    <p>
+                        Para evitar este problema se usa una variedad de técnicas de programación incluyendo semáforos y
+                        otras comprobaciones y bloqueos que permiten a una sola copia del programa cambiar de forma
+                        exclusiva
+                        ciertos valores.</p>
+
+                    <p>
+                        <b>Multitarea:</b> Permite a múltiples procesos compartir una única CPU, múltiples CPUs pueden
+                        ser utilizados
+                        para ejecutar múltiples hilos dentro de un único proceso.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
