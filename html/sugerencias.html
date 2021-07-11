@@ -39,9 +39,17 @@
     <div id="Form_sugerencias" class="formulario">
         <h1 align="center">Sugerencias</h1>
         <p>Desea enviar una recomendacion o sugerencia llene los datos y la recibiremos con mucho gusto</p>
-        <form id="sugerencias" method="get">
+        <form id="sugerencias" method="post" action="https://formspree.io/19051123@saltilo.tecnm.mx">
             <p>Nombres: <input class="text" type="text" name="Nombre"> &nbsp; Apellidos: <input class="text" type="text" name="Apellidos"> </p>
-            <p>Correo electronico &nbsp; <input class="text" type="email" name="email"></p>
+            <p>Correo electronico &nbsp; <input class="text" type="email" name="email" placeholder="Email" required name="email"></p>
+            <!--El siguiente atributo esta oculto y es para definir el
+            asunto de tu correo-->
+            <input type="hidden" name="_subject" value="Website contact" />
+            <!--El siguiente campo es por seguridad para evitar spam, esta oculto
+            para el usuario pero no para para el bot que lo acabara rellenando
+            cuando formspree detecte este campo llenado lo mandará directamente
+            a tu carpeta de spam-->
+            <input type="text" name="_gotcha" style="display:none" />
             <p>Sexo:
                 <!-- "hm" es un ID agrupo los radios buttons en un grupo -->
                 <!-- Name indica el grupo donde pertenecera -->
