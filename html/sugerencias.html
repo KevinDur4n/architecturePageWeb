@@ -40,7 +40,7 @@
         <h1 align="center">Sugerencias</h1>
         <p>Desea enviar una recomendacion o sugerencia llene los datos y la recibiremos con mucho gusto</p>
         <form id="sugerencias" method="POST" action="https://formspree.io/f/mpzkjwqk">
-            <p>Nombres: <input class="text" type="text" name="Nombre"> &nbsp; Apellidos: <input class="text" type="text" name="Apellidos"> </p>
+            <p>Nombres: <input class="text" type="text" name="Nombre" placeholder="Nombre"> &nbsp; Apellidos: <input class="text" type="text" name="Apellidos" placeholder="Apellidos"> </p>
             <p>Correo electronico &nbsp; <input class="text" type="email" name="email" placeholder="Email" required name="email"></p>
             <!--El siguiente atributo esta oculto y es para definir el
             asunto de tu correo-->
@@ -59,7 +59,7 @@
             </p>
             <p>Sugerencias: </p>
             <!-- Area para escribir las sugerencias -->
-            <textarea class="sugerencias" name="sugerencias" form="sugerencias"></textarea>
+            <textarea class="sugerencias" required name="sugerencias" form="sugerencias" placeholder="Escribe aqui una suguerencia" ></textarea>
             <p>
                 <input type="submit" name="Enviar">
                 <input type="reset" name="Borrar">
